@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-size: cover;
+        color: aliceblue;
+        text-align: center;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        font-size: 2em;
+        margin: 0px;
+        padding: 0px;
+        background-color: #0b6623;
+       
+      }
+
+      
+
+      .main {
+        background-image: url(/table.png);
+        background-size: cover;
+        width: 700px;
+        height: 100vh;
+        margin: auto;
+      }
+      h1 {
+        margin: 0px;
+        padding: 40px;
+        color: goldenrod;
+      }
+      #message-el {
+        font-style: italic;
+      }
+
+      button {
+        color: #016f32;
+        width: 150px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: goldenrod;
+        padding: 10px 0px;
+        border: none;
+      }
+
+      button:hover {
+        color: #ffffff;
+        font-size: 20px;
+        background-color: rgb(181, 135, 19);
+      }
+      button:active {
+        color: #016f32;
+        font-size: 20px;
+        background-color: rgb(181, 135, 19);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <h1>Blackjack</h1>
+      <p id="message-el">Want to play a round</p>
+      <p id="card-el">Card: </p>
+      <p id="sum-el">Sum: </p>
+      <button onclick="startGame()">Start Game</button>
+      <button onclick="newcard()">New Card</button>
+      <p id="player-el"></p>
+    </div>
+    
+
+    <script src="index.js"></script>
+    <!-- <script src="pratice.js"></script> -->
+  </body>
+</html>
